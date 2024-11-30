@@ -1,0 +1,57 @@
+$bg-color: #f0f0f0;
+$color: #335;
+$primary-color: #e74c3c;
+$font-family: "Muli", sans-serif;
+$shadow: 10px 10px 20px 5px rgba(62, 60, 60, 0.3);
+$sett-margin: 8px;
+$border: none;
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: $bg-color;
+    color: $color;
+    font-family: $font-family;
+}
+
+.container {
+    margin: 10% auto;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    border: $border;
+    box-shadow: $shadow;
+}
+.result {
+    box-shadow: $shadow;
+    padding: 5px;
+}
+textarea {
+    outline: none;
+    background: none;
+    border: $border;
+    resize: none;
+    width: 100%;
+}
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $sett-margin;
+}
+.passwordLength {
+    width: 5px;
+}
+.buttons {
+    margin-top: $sett-margin;
+    display: flex;
+}
+.btn {
+    width: 50%;
+    border: $border;
+    box-shadow: $shadow;
+    padding: 10px;
+}
