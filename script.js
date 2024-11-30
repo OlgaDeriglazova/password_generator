@@ -30,6 +30,10 @@ function getRandomSymbol() {
  const generate = document.getElementById("generatePass");
  generate.addEventListener("click", () => {
     const length = Number(document.getElementById("passwordLength").value);
+       if (length < 4) {
+        alert("Пароль должен быть длиннее 4 символов.");
+        return;
+    }
     const upper = document.getElementById("uppercase").checked;
     const lower = document.getElementById("lowercase").checked;
     const number = document.getElementById("numbers").checked;
